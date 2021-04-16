@@ -36,8 +36,8 @@ class ShipData extends Component {
     render(){
         return (
             <>
-                {this.state.shipData.position == null ? <p>La position es null</p> : <p>The position is: {this.state.shipData.position}</p>}
-                {this.state.shipData.message == null ? <p>El message es null</p> : <p>The message is: {this.state.shipData.message}</p>}
+                {this.state.shipData.position == null ? <p>The position could not be retrieved</p> : <p>The position is: {this.state.shipData.position}</p>}
+                {this.state.shipData.message == null ? <p>El message could not be retrieved</p> : <p>The message is: {this.state.shipData.message}</p>}
             </>
         )
     }
