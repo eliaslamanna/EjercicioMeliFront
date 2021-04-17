@@ -13,7 +13,7 @@ import './App.css';
 function App() {
 
   const[estado,setEstado] = useState({
-    opcionesMenu:[{name:'findShipInformation',path:"/topsecret"},{name:'updateSplitSatelliteData',path:"/updateSplitSatelliteData"}],
+    opcionesMenu:[{name:'Find ship information',path:"/topsecret"},{name:'Update split satellite data',path:"/updateSplitSatelliteData"}],
   })
 
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route exact path='/updateSplitSatelliteData' component={()=><UpdateSplitSatelliteDataMenu/>}/>
         <Route exact path='/topsecret_split/:satellite_name' component={(props)=><UpdateSplitSatelliteData {...props} state={props}/>}/>
         <Route exact path='/satelliteData' render={(props)=><SatelliteData {...props} state={props}/>}/>
-      </BrowserRouter>
+      </BrowserRouter>   
   );
 }
 
