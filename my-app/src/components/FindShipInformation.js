@@ -106,7 +106,7 @@ function FindShipInformation() {
                         </Form.Group>
                     </div>
                     <div className="p-3 mr-5 ml-5 container">
-                        <h3>PRUEBA</h3>
+                        <h3>Skywalker</h3>
                         <Form.Group controlId="skywalkerDistance">
                             <Form.Control type="number" placeholder="Skywalker distance" name="distance" value={skywalker.distance} onChange={(event) => handleSkywalker(event)}/>
                         </Form.Group>
