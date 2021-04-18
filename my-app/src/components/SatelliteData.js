@@ -34,8 +34,12 @@ class SatelliteData extends Component {
     render(){
         return (
             <>
-                {this.state.satellite.position == null ? <p>The position could not be retrieved</p> : <p>The position is: {this.state.satellite.position}</p>}
-                {this.state.satellite.message == null ? <p>El message could not be retrieved</p> : <p>The message is: {this.state.satellite.message}</p>}
+                <div className="p-3">
+                    {this.state.satellite.distance == null ? <h5>The <strong>distance</strong> could not be updated</h5> : <h5>The <strong>distance</strong> was updated succesfully</h5>}
+                </div>
+                <div className="p-3">
+                    {this.state.satellite.message == null ? <h5>El <strong>message</strong> could not be updated</h5> : <h5>The <strong>message</strong> was updated successfully</h5>}
+                </div>
             </>
         )
     }

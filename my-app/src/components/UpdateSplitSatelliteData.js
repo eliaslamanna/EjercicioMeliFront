@@ -3,7 +3,6 @@ import { Link, Router } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import '../styles/UpdateSplitSatelliteData.css';
 
 function UpdateSplitSatelliteData(props) {
 
