@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link, Router} from 'react-router-dom';
 import axios from 'axios';
+import '../styles/ShipData.css';
 
 class SplitShipData extends Component {
     
@@ -29,8 +30,12 @@ class SplitShipData extends Component {
     render() {
         return (
             <>
-                {this.state.shipData.position == null ? <p>The position could not be retrieved</p> : <p>The position is: {this.state.shipData.position}</p>}
-                {this.state.shipData.message == null ? <p>El message could not be retrieved</p> : <p>The message is: {this.state.shipData.message}</p>}
+                <div className="p-3">
+                    {this.state.shipData.position == null ? <h5>The <strong>position</strong> could not be retrieved</h5> : <h5>The <strong>position</strong> is <strong>{this.state.shipData.position}</strong></h5>}
+                </div>
+                <div className="p-3">
+                    {this.state.shipData.message == null ? <h5>El <strong>message</strong> could not be retrieved</h5> : <h5>The <strong>message</strong> is <strong>{this.state.shipData.message}</strong></h5>}
+                </div>
             </>
         )
     }
