@@ -1,0 +1,30 @@
+Instroduccion:
+
+En la pantalla principal se ven 2 botones apenas se inicia la aplicacion con las acciones que se pueden realizar.
+
+
+
+Find ship information:
+
+Al apretar este boton se abre un formulario con los 3 satelites para que se ingresen sus distancias y mensajes. Luego con el boton Ship information se triangula la posicion de la nave con los datos ingresados ademas de que se busca completar el mensaje enviado, mostrandolos en la pantalla o avisando que no se pudieron obtener.
+
+Cosas a tener en cuenta:
+
+- los mensajes se tienen que completar separando cada palabra con una ,
+- si una palabra del mensaje no se conoce hay que completarla con un espacio vacio, tambien en los casos que sea la primera o ultima palabra
+- si una palabra no se encuentra en ninguno de los 3 satelites el mensaje queda incompleto y no se puede reproducir
+- si los mensajes son inconsistentes, es decir si son diferentes, al momento de intentar unirlos para reproducir un mensaje completo esto no es posible
+
+
+
+Update split satellite data:
+
+Este boton se usa para modificar los datos de un satelite pero de 1 a la vez y guardando su informacion en la base de datos.
+
+Se muestran los 3 satelites y al elegir uno se muestra un formulario como en Find Ship information pero solo de ese satelite, y una vez que se completa se avisa al usuario que los cambios se hicieron correctamente.
+
+Ademas de poder elegir que satelite modificar, esta el boton Get ship information que su funcion es la misma que la de Find ship information pero usando los datos de la base que se actualizan con Update split satellite data.
+
+-Cosas a tener en cuenta:
+
+- las consideraciones son las mismas que para Find Ship information ademas de que hay que asegurarse de que todas las naves esten cargadas

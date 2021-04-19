@@ -34,7 +34,7 @@ class UpdateSplitSatelliteDataMenu extends Component {
                 </div>
                 <div>
                     <Button className="button mt-3 mb-5 mr-2 ml-2" size="lg" variant="info">
-                        <Link className="getButton" style={{ textDecoration: 'none' }} to='/topsecret_split'>GET</Link>
+                        <Link className="getButton" style={{ textDecoration: 'none' }} to='/topsecret_split'>Get Ship Information</Link>
                     </Button>
                 </div>
             </div>
